@@ -27,7 +27,7 @@ Find us at:
 
 [![GitHub Release](https://img.shields.io/github/release/linuxserver-playground/docker-qbittorrent.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github&include_prereleases)](https://github.com/linuxserver-playground/docker-qbittorrent/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver-playground/docker-qbittorrent/packages)
-[![Docs](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Docs&logo=materialformkdocs)](https://linuxserver-playground.github.io/docs/images/docker-qbittorrent)
+[![Docs](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Docs&logo=materialformkdocs)](https://linuxserver-playground.github.io/site/images/qbittorrent/)
 [![CI](https://ci.thelamer.duckdns.org:8443/badge/qbittorrent/libtorrentv1.svg)](https://ci.thelamer.duckdns.org:8443/images/qbittorrent/libtorrentv1)
 
 The [Qbittorrent](https://www.qbittorrent.org/) is a bittorrent client programmed in C++ / Qt that uses libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.
@@ -78,11 +78,11 @@ Similarly to the WEBUI_PORT, to set the port to 6887 you need to pass -p 6887:68
 
 ## Read-Only Operation
 
-This image can be run with a read-only container filesystem. For details please [read the docs](https://linuxserver-playground.github.io/docs/misc/read-only/).
+This image can be run with a read-only container filesystem. For details please [read the docs](https://linuxserver-playground.github.io/site/docs/misc/read-only/).
 
 ## Non-Root Operation
 
-This image can be run with a non-root user. For details please [read the docs](https://linuxserver-playground.github.io/docs/misc/non-root/).
+This image can be run with a non-root user. For details please [read the docs](https://linuxserver-playground.github.io/site/docs/misc/non-root/).
 
 ## Usage
 
@@ -91,7 +91,7 @@ To help you get started creating a container from this image you can either use 
 > [!NOTE]
 > Unless a parameter is flagged as 'optional', it is *mandatory* and a value must be provided.
 
-### docker-compose (recommended, [click here for more info](https://linuxserver-playground.github.io/docs/general/docker-compose))
+### docker-compose (recommended, [click here for more info](https://linuxserver-playground.github.io/site/docs/general/docker-compose))
 
 ```yaml
 ---
@@ -153,8 +153,8 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-v /config` | Contains all relevant configuration files. |
 | `-v /downloads` | Location of downloads on disk. |
 | `--stop-timeout=` | If you have a large number of torrents you may need to increase the container stop timeout to ensure a clean shutdown. |
-| `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://linuxserver-playground.github.io/docs/misc/read-only/). |
-| `--user=1000:1000` | Run container with a non-root user. Please [read the docs](https://linuxserver-playground.github.io/docs/misc/non-root/). |
+| `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://linuxserver-playground.github.io/site/docs/misc/read-only/). |
+| `--user=1000:1000` | Run container with a non-root user. Please [read the docs](https://linuxserver-playground.github.io/site/docs/misc/non-root/). |
 
 ## Environment variables from files (Docker secrets)
 
@@ -193,7 +193,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 
 ## Docker Mods
 
-[![Docker Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=qbittorrent&message=mods&logo=docker)](https://linuxserver-playground.github.io/hub/mods/?image=qbittorrent "view available mods for this container.") [![Docker Universal Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=universal&message=mods&logo=docker)](https://linuxserver-playground.github.io/hub/mods/?image=universal "view available universal mods.")
+[![Docker Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=qbittorrent&message=mods&logo=docker)](https://linuxserver-playground.github.io/site/mods/?image=qbittorrent "view available mods for this container.") [![Docker Universal Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=universal&message=mods&logo=docker)](https://linuxserver-playground.github.io/site/mods/?image=universal "view available universal mods.")
 
 We publish various [Docker Mods](https://github.com/linuxserver-playground/docker-mods) to enable additional functionality within the containers. The list of Mods available for this image (if any) as well as universal mods that can be applied to any one of our images can be accessed via the badges above.
 
