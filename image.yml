@@ -18,6 +18,13 @@ upstream:
     require_assets:
       - asset: '^x86_64\-qbittorrent\-nox$'
       - asset: '^aarch64\-qbittorrent\-nox$'
+  notes:
+    type: command
+    run: |-
+      curl -H "Authorization: token ${GITHUB_TOKEN}" -s "https://api.github.com/repos/qbittorrent/qbittorrent/releases/tags/release-${VERSION%%_v1*}" | jq -r '. |.body' | sed -e 's| #\([0-9]*\)| [#\1](https://github.com/qbittorrent/qBittorrent/pull/\1)|g'
+  sponsor:
+  - name: qBittorrent
+    url: https://www.qbittorrent.org/donate
 
 release:
   branch: libtorrentv1
