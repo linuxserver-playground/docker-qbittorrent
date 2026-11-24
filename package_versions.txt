@@ -68,7 +68,7 @@ pcre2                                                     10.49-r0          apk
 procps-ng                                                 4.0.6-r0          apk     
 pyc                                                       3.14.10-r2        apk     
 python3                                                   3.14.10-r2        apk     
-python3-ndbm                                              3.14.10-r2        apk     
+python3-ndbm                                              3.14.10-r3        apk     
 python3-pyc                                               3.14.10-r2        apk     
 python3-pycache-pyc0                                      3.14.10-r2        apk     
 qbt                                                       1.8.24285.1       dotnet  
